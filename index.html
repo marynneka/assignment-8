@@ -19,24 +19,96 @@
   <body>
     <header id="container_1">
       <nav class="nav_container">
+        <div class="sidenav-1">
+          <ul>
+            <a href=""><li>HOME</li></a>
+            <a href=""><li>ABOUT</li></a>
+            <a href=""><li>WORK</li></a>
+            <a href=""><li>SERVICES</li></a>
+            <a href=""><li>TESTIMONIAL</li></a>
+            <a href=""><li>BLOG</li></a>
+            <a href=""><li>CONTACTS</li></a>
+          </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <div class="closebtn" onclick="closeNav()">
+            <i class="fa-regular fa-x"></i>
+          </div>
+
+          <div class="sidenav-img">
+            <img src="./assets/images/logo.png" alt="logo..." class="logo" />
+          </div>
+
+          <div class="nav-neque">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+            consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam,
+            exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse
+            quam nihil
+          </div>
+
+          <div class="side-add">
+            <h6>ADDRESS</h6>
+            <p>Victoria Street London,</p>
+          </div>
+          <div class="side-email">
+            <h6>EMAIL</h6>
+            <p>Matias999@.Com</p>
+          </div>
+          <div class="side-call">
+            <h6>CALL NOW</h6>
+            <p>+98 4758 2154 021</p>
+          </div>
+
+          <div class="nav-social">
+            <i class="fa-brands fa-facebook facebook"></i>
+            <i class="fa-brands fa-twitter twitter"></i>
+            <i class="fa-brands fa-linkedin linkedin"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+          </div>
+
+          <div class="sidenav-btn">
+            <button>> Let's Talk</button>
+          </div>
+        </div>
+
         <img src="./assets/images/logo.png" alt="logo..." class="logo" />
 
-        <ul class="ul_container">
-          <li><a href="#container_1" target="_blank">HOME</a></li>
-          <li><a href="#container_2" target="_blank">ABOUT</a></li>
-          <li><a href="" target="_blank">WORK</a></li>
-          <li><a href="" target="_blank">SERVICES</a></li>
-          <li><a href="" target="_blank">TESTIMONIAL</a></li>
-          <li><a href="" target="_blank">BLOG</a></li>
-          <li><a href="" target="_blank">CONTACTS</a></li>
-        </ul>
+        <div class="drop-down-menu">
+          <ul class="ul_container">
+            <li><a href="#container_1" target="_blank">HOME</a></li>
+            <li><a href="#container_2" target="_blank">ABOUT</a></li>
+            <li><a href="" target="_blank">WORK</a></li>
+            <li>
+              <a href="" target="_blank" class="toolpic-li">SERVICES</a>
+              <br />
+              <div class="toolpic">
+                <a href="">Services</a> <br />
+                <a href="">Service Details</a>
+              </div>
+            </li>
+            <li><a href="" target="_blank">TESTIMONIAL</a></li>
+            <li>
+              <a href="" target="_blank" class="toolpic-li">BLOG</a> <br />
+              <div class="toolpic">
+                <a href="">Blog</a>
+                <a href="">Blog Details</a>
+              </div>
+            </li>
+            <li><a href="" target="_blank">CONTACTS</a></li>
+          </ul>
+        </div>
 
         <div class="aside">
           <button class="nav_btn">
             LET'S TALK <i class="fa-solid fa-arrow-right"></i>
           </button>
           <i class="fa-solid fa-bars" id="mobile-nav-bar"></i>
-          <i class="fa-solid fa-bars" id="open-contact"></i>
+          <i
+            class="fa-solid fa-bars openNav"
+            id="open-contact"
+            onclick="openNav()"
+          ></i>
         </div>
       </nav>
 
@@ -89,7 +161,7 @@
     </section>
 
     <section id="container_3">
-      <div id="container_3_sub_section_1" id="percon" style=" display: none;">
+      <div id="container_3_sub_section_1" id="percon" style="display: none">
         <div class="container_3_sub_section_1-image">
           <img src="./assets/images/personal-infothumb.png" alt="" />
         </div>
@@ -130,11 +202,15 @@
         </div>
       </div>
 
-      <div class="container_3_sub_section_1-1" id="expcon" style=" display: none;">
+      <div
+        class="container_3_sub_section_1-1"
+        id="expcon"
+        style="display: none"
+      >
         <div class="container_3_sub_section_1-1-image">
           <img src="./assets/images/personal-infothumb.png" alt="" />
         </div>
-        <div class="container_3_sub_section_1-1-details" >
+        <div class="container_3_sub_section_1-1-details">
           <h1>Experience</h1>
           <p class="neque">
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit
@@ -176,11 +252,15 @@
         </div>
       </div>
 
-      <div class="container_3_sub_section_1-1" id="educon" style=" display: none;">
+      <div
+        class="container_3_sub_section_1-1"
+        id="educon"
+        style="display: none"
+      >
         <div class="container_3_sub_section_1-1-image">
           <img src="./assets/images/personal-infothumb.png" alt="" />
         </div>
-        <div class="container_3_sub_section_1-1-details" >
+        <div class="container_3_sub_section_1-1-details">
           <h1>Education</h1>
           <p class="neque">
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit
@@ -222,11 +302,11 @@
         </div>
       </div>
 
-      <div id="container_3_sub_section_1" id="skillcon" style=" display: none;">
+      <div id="container_3_sub_section_1" id="skillcon" style="display: none">
         <div class="container_3_sub_section_1-image">
           <img src="./assets/images/personal-infothumb.png" alt="" />
         </div>
-        <div class="container_3_sub_section_1-details" >
+        <div class="container_3_sub_section_1-details">
           <h1>My Skills</h1>
           <p>
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit
@@ -239,18 +319,16 @@
               <div class="email_div" id="html">
                 <img src="./assets/images/html.png" alt="" />
                 <div>
-                   <p>HTML</p>
-                <h1>85%</h1>
+                  <p>HTML</p>
+                  <h1>85%</h1>
                 </div>
-               
               </div>
               <div class="phone_div" id="figma">
                 <img src="./assets/images/figma.png" alt="" />
                 <div class="Figma">
-                   <p>Figma</p>
-                <h1>90%</h1>
+                  <p>Figma</p>
+                  <h1>90%</h1>
                 </div>
-               
               </div>
             </div>
 
@@ -316,99 +394,401 @@
     <section id="container_5">
       <p class="line">Complete Project</p>
       <p class="look">Look At My Portfolio And Give Me Your Feedback</p>
-       
+
       <div class="container_5_1_image">
         <div class="container_5_1_image-1">
-          <img src="./assets/images/pro1.png" alt="">
-<div class="image-1_des">
-  <div class="Product">
-   <p>PRODUCT DESIGN</p> 
-   <h3>Brand Identity & Motion Design</h3>
-  </div>
-  <div class="container_5_arrow">
-    <i class="fas fa-arrow-up arrow-top-right"></i>
-  </div>
-</div>
+          <img src="./assets/images/pro1.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>PRODUCT DESIGN</p>
+              <h3>Brand Identity & Motion Design</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
+          </div>
         </div>
 
-<div class="container_5_1_image-2">
-  <img src="./assets/images/pro2.png" alt="">
-<div class="image-1_des">
-  <div  class="Product">
-   <p>UI/UX DESIGN</p> 
-   <h3>Mobile Application Development</h3>
-  </div>
-  <div class="container_5_arrow">
-    <i class="fas fa-arrow-up arrow-top-right"></i>
-  </div>
-</div>
-</div>
-</div>
-      
+        <div class="container_5_1_image-2">
+          <img src="./assets/images/pro2.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>UI/UX DESIGN</p>
+              <h3>Mobile Application Development</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container_5_2_image">
         <div class="container_5_2_image-1">
-          <img src="./assets/images/pro3.png" alt="">
-<div class="image-1_des">
-  <div  class="Product">
-   <p>UI/UX DESIGN</p> 
-   <h3>Mobile Application Development</h3>
-  </div>
-  <div class="container_5_arrow">
-    <i class="fas fa-arrow-up arrow-top-right"></i>
-  </div>
-</div>
-        </div>
-
-<div class="container_5_2_image-2">
-<img src="./assets/images/pro4.png" alt="">
-<div class="image-1_des">
-  <div class="Product">
-   <p >UI/UX DESIGN</p> 
-   <h3>Mobile Application Development</h3>
-  </div>
-  <div class="container_5_arrow">
-    <i class="fas fa-arrow-up arrow-top-right"></i>
-  </div>
-</div>
-</div>
-</div>
-      
-  <div class="container_5_3_image">
-    <div class="container_5_3_image-1">
- <img src="./assets/images/pro5.png" alt="">
-        <div class="image-1_des">
-          <div  class="Product">
-           <p>PRODUCT DESIGN</p> 
-           <h3>Design & Branding Mokeup</h3>
-          </div>
-          <div class="container_5_arrow">
-            <i class="fas fa-arrow-up arrow-top-right"></i>
+          <img src="./assets/images/pro3.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>UI/UX DESIGN</p>
+              <h3>Mobile Application Development</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
           </div>
         </div>
-    </div>
-       
-<div class="container_5_3_image-2">
- <img src="./assets/images/pro6.png" alt="">
-        <div class="image-1_des">
-          <div  class="Product">
-           <p>UI/UX DESIGN</p> 
-           <h3>Mobile Application Development</h3>
-          </div>
-          <div class="container_5_arrow">
-            <i class="fas fa-arrow-up arrow-top-right"></i>
+
+        <div class="container_5_2_image-2">
+          <img src="./assets/images/pro4.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>UI/UX DESIGN</p>
+              <h3>Mobile Application Development</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
           </div>
         </div>
-</div>
-</div>
+      </div>
 
-<div class="container_5_circle">
-  <div class="inside_circle">
-    <i class="fa-solid fa-arrow-right"></i>
-<p>Click More Work</p>
-  </div>
-  </div>
+      <div class="container_5_3_image">
+        <div class="container_5_3_image-1">
+          <img src="./assets/images/pro5.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>PRODUCT DESIGN</p>
+              <h3>Design & Branding Mokeup</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
+          </div>
+        </div>
 
+        <div class="container_5_3_image-2">
+          <img src="./assets/images/pro6.png" alt="" />
+          <div class="image-1_des">
+            <div class="Product">
+              <p>UI/UX DESIGN</p>
+              <h3>Mobile Application Development</h3>
+            </div>
+            <div class="container_5_arrow">
+              <i class="fas fa-arrow-up arrow-top-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container_5_circle">
+        <div class="inside_circle">
+          <i class="fa-solid fa-arrow-right"></i>
+          <p>Click More Work</p>
+        </div>
+      </div>
     </section>
+
+    <section id="container_6">
+      <div class="container_6-des">
+        <div class="container_6-des-1">
+          <p>Need a Project?</p>
+          <h2>Let's Work Together. Fixed A Meeting</h2>
+        </div>
+        <div class="container_6-des-email">
+          <i class="fa-regular fa-envelope"></i>
+          <div class="email-con-5">
+            <p>Email</p>
+            <h5>davidmatias3</h5>
+          </div>
+        </div>
+        <div class="container_6-des-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="email-con-5">
+            <p>Location</p>
+            <h5>Victoria Street London, England</h5>
+          </div>
+        </div>
+      </div>
+      <div class="container_6-img">
+        <img src="./assets/images/project-need.png" alt="" />
+      </div>
+    </section>
+
+    <section id="container_7">
+      <div class="container_7-des-1">
+        <p>Services That i Provide</p>
+        <h5>My Special Service For Your Business Development</h5>
+      </div>
+      <div>
+        <div class="designer-con">
+          <div class="designer-con-2">
+            <!-- <div class="designer-con-3"> -->
+            <span>01</span>
+            <div class="designer-con-1">
+              <h5>Designer</h5>
+              <h2>Illustration Design</h2>
+            </div>
+            <!-- </div> -->
+            <div>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+          </div>
+          <div>
+            <button><i class="fas fa-arrow-up arrow-top-right"></i></button>
+          </div>
+        </div>
+        <div class="branding-con">
+          <div class="branding-con-1">
+            <span>02</span>
+            <div>
+              <h5>Branding</h5>
+              <h2>Business Branding</h2>
+            </div>
+          </div>
+          <div>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia
+              deserunt mollit
+            </p>
+          </div>
+          <div>
+            <button><i class="fas fa-arrow-up arrow-top-right"></i></button>
+          </div>
+        </div>
+        <div class="ui-con designer-con">
+          <div class="designer-con-2">
+            <span>03</span>
+            <div class="designer-con-1">
+              <h5>UI/UX Design</h5>
+              <h2>Web UI/UX Design</h2>
+            </div>
+            <div>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+          </div>
+          <div>
+            <button><i class="fas fa-arrow-up arrow-top-right"></i></button>
+          </div>
+        </div>
+        <div class="web-con branding-con">
+          <div class="branding-con-1">
+            <span>04</span>
+            <div>
+              <h5>Web Design</h5>
+              <h2>Application Design</h2>
+            </div>
+          </div>
+          <div>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia
+              deserunt mollit
+            </p>
+          </div>
+          <div>
+            <button><i class="fas fa-arrow-up arrow-top-right"></i></button>
+          </div>
+        </div>
+        <div class="seo-con designer-con">
+          <div class="designer-con-2">
+            <span>05</span>
+            <div class="designer-con-1">
+              <h5>SEO Analytics</h5>
+              <h2>Digital Marketing</h2>
+            </div>
+            <div>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. sunt in culpa qui
+                officia deserunt mollit
+              </p>
+            </div>
+          </div>
+          <div>
+            <button><i class="fas fa-arrow-up arrow-top-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="container_8">
+      <p class="working-8">Working Process</p>
+      <h5>Your Dream Website In Just Few Steps</h5>
+      <div class="container_8-1">
+        <div class="concept-con">
+          <h4>Concept</h4>
+          <p>
+            Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+            fugit
+          </p>
+          <ul>
+            <li>Reviewing any existing branding</li>
+            <li>Target audience and competitors research</li>
+            <li>Developing a strategy</li>
+          </ul>
+        </div>
+        <div class="design-con">
+          <h4>Design</h4>
+          <p>
+            Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+            fugit
+          </p>
+          <ul>
+            <li>Developing wireframes and mockup</li>
+            <li>Choosing typography, color palettes,</li>
+            <li>Refining the design</li>
+          </ul>
+        </div>
+        <div class="webflow-con">
+          <h4>Webflow</h4>
+          <p>
+            Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
+            fugit
+          </p>
+          <ul>
+            <li>Testing the website thoroughly launch</li>
+            <li>Choosing typography, color palettes,</li>
+            <li>Refining the design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="container_9">
+      <p class="test">Testimonial</p>
+      <h5 class="happy-word">Happy Words From Happy Customer</h5>
+      <div class="container_9-details">
+        <div class="mack-zuck">
+          <img src="./assets/images/man1.png" alt="" />
+          <img src="./assets/images/man3.png" alt="" />
+        </div>
+        <div class="container_9-moving">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, by
+            injected humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be hidden in middle of text. All the Lorem Ipsum generators
+            Shawn Beltran Business Owner There are many variations of passages
+            of Lorem Ipsum available, by injected humour, or randomised words
+            which don't look even slightly believable. If you are going to use a
+            passage of Lorem Ipsum, you need to be hidden in middle of text. All
+            the Lorem Ipsum generators
+          </p>
+          <div class="container_9-moving-1">
+            <div>
+              <h5>Shawn Beltran</h5>
+              <p>Business Owner</p>
+            </div>
+            <i class="fa-regular fa-circle-dot"></i>
+            <i class="fa-regular fa-circle-dot"></i>
+            <i class="fa-regular fa-circle-dot"></i>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/man2.png" alt="" />
+          <img src="./assets/images/testi-arrow.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="container_10">
+      <div class="container_10-1">
+        <div class="myblog">
+          <p class="blogs-con">My Blogs</p>
+          <h5 class="recent-post">Recent Posts</h5>
+          <div class="container_5_circle circle-con-10">
+            <div class="inside_circle">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p>Click More Work</p>
+            </div>
+          </div>
+        </div>
+        <div class="container_10-details">
+          <div class="container_10-details-1">
+            <div class="container_10-details-2">
+              <p>October 19, 2023</p>
+              <h5>Brand Design That Helps The Company Grow</h5>
+            </div>
+            <div class="con-10-img">
+              <img src="./assets/images/bblog1.png" alt="" />
+            </div>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+          <div class="container_10-details-1">
+            <div class="container_10-details-2">
+              <p>October 19, 2023</p>
+              <h5>Fresh Design Ideas & Inspiration For 2023</h5>
+            </div>
+            <div class="con-10-img">
+              <img src="./assets/images/bblog2.png" alt="" />
+            </div>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+          <div class="container_10-details-1">
+            <div class="container_10-details-2">
+              <p>October 19, 2023</p>
+              <h5>Fresh Design Ideas & Inspiration For 2023</h5>
+            </div>
+            <div class="con-10-img">
+              <img src="./assets/images/bblog3.png" alt="" />
+            </div>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="container_11">
+      <h6>GET IN TOUCH</h6>
+      <div class="container_11-1">
+        <div class="container_11-2">
+          <p class="hello-11-2">
+            Hello, I’m David Matias, Website & User Interface Designer based in
+            London.
+          </p>
+          <p class="emaill-11-2">Davidmatias333@.Com
+          </p>
+        </div>
+        <div class="container_11-social">
+          <div class="container_11-social-1">
+            <p class="facebook-social-1">Facebook <i class="fa-solid fa-arrow-right"></i></p>
+            <p class="twitter-social-1">Twitter <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+          <div class="container_11-social-2">
+            <p class="linkdin-social-1">Linkdin <i class="fa-solid fa-arrow-right"></i></p>
+            <p class="webflow-social-1">Webflow <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+       <p class="copyright-footer">Copyright © 2023 <span>Matias.</span> All rights reserved.</p> 
+      </div>
+      
+    <div class="term-privacy">
+      <p class="terms-footer">Terms & Condition</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+      
+    </footer>
 
     <script src="./index.js" defer></script>
   </body>

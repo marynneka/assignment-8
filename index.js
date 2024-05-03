@@ -1,5 +1,6 @@
 // document.addEventListener("DOMContentLoaded", (event) => {
 
+
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav_container')
     if(window.pageYOffset > 0) {
@@ -59,6 +60,23 @@ window.addEventListener('load', ()=> {
 
     about.style.display = 'flex'
 })
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+
+
+
+
+
+
+
 // });
 
 
